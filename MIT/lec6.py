@@ -9,18 +9,20 @@ Created on Wed Sep 21 11:52:34 2016
 # EXAMPLE:  Towers of Hanoi
 #####################################
 
+
 def printMove(fr, to):
     print('move from ' + str(fr) + ' to ' + str(to))
 
 def Towers(n, fr, to, spare):
+    
     if n == 1:
         printMove(fr, to)
     else:
         Towers(n-1, fr, spare, to)
         Towers(1, fr, to, spare)
-        Towers(n-1, spare, to, fr)
+        Towers(n-1, spare, to, fr)       
 
-#print(Towers(4, 'P1', 'P2', 'P3'))
+#print(Towers(5, 'P1', 'P2', 'P3'))
 
 #####################################
 # EXAMPLE:  fibonacci
@@ -56,11 +58,11 @@ def isPalindrome(s):
 
     return isPal(toChars(s))
 
-#print(isPalindrome('eve'))
-#
-#print(isPalindrome('Able was I, ere I saw Elba'))
-#
-#print(isPalindrome('Is this a palindrome'))
+# print(isPalindrome('eve'))
+# #
+# print(isPalindrome('Able was I, ere I saw Elba'))
+# #
+# print(isPalindrome('Is this a palindrome'))
 
 #####################################
 # EXAMPLE: using dictionaries
@@ -153,7 +155,7 @@ def words_often(freqs, minTimes):
             done = True
     return result
     
-#print(words_often(beatles, 5))
+# print(words_often(beatles, 5))
 
 #####################################
 # EXAMPLE: comparing fibonacci using memoization
@@ -180,12 +182,12 @@ def fib_efficient(n, d):
 d = {1:1, 2:2}
 
 argToUse = 34
-# print("")
-# print('using fib')
-# print(fib(argToUse))
-# print("")
-# print('using fib_efficient')
-# print(fib_efficient(argToUse, d))
+print("")
+print('using fib')
+print(fib(argToUse))
+print("")
+print('using fib_efficient')
+print(fib_efficient(argToUse, d))
 
 
 
