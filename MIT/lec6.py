@@ -182,12 +182,12 @@ def fib_efficient(n, d):
 d = {1:1, 2:2}
 
 argToUse = 34
-print("")
-print('using fib')
-print(fib(argToUse))
-print("")
-print('using fib_efficient')
-print(fib_efficient(argToUse, d))
+# print("")
+# print('using fib')
+# print(fib(argToUse))
+# print("")
+# print('using fib_efficient')
+# print(fib_efficient(argToUse, d))
 
 
 
